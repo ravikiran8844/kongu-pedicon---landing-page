@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "tailwind-scrollbar-hide";
+
+
+
+@theme {
+    --color-blue: #004C97;
+    --color-red: #ED2228;
+    --color-yellow: #78dcca;
+    --color-dark: #2D2D2D;
+    --color-light: #626262;
+  }
+
+body{
+    background-color: #F8F9FB;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+  }
