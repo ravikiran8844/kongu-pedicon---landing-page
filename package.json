@@ -15,5 +15,8 @@
     "preline": "^3.0.1",
     "tailwind-scrollbar-hide": "^2.0.0",
     "tailwindcss": "^4.1.2"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.13"
   }
 }
