@@ -13,8 +13,36 @@
 
 body{
     background-color: #F8F9FB;
+    --swiper-navigation-color:#000;
+    --swiper-theme-color:#000;
+    --swiper-navigation-size:22px;
 }
 
 .roboto {
     font-family: "Roboto", sans-serif;
+  }
+
+  .swiper {
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    height: auto !important;
+  }
+ .swiper .card  {
+  height: 100% !important
+  }
+
+ .swiper-pagination-bullet {
+      width: 28px;
+      height: 6px;
+      border-radius: 2px
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color:  #ED2228;
+  }
+ 
+
+  .section3-grid-items .text-center.space-y-1{
+    @apply max-sm:w-[33%]
   }
