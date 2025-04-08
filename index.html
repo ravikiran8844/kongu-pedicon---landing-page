@@ -20,42 +20,54 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="roboto antialiased">
-
-
-<!-- Header -->
-<header class="relative flex items-center justify-between px-4 bg-white shadow-md h-20">
-  <!-- Hamburger menu (hidden on large screens) -->
-  <button id="menuToggle" class="lg:hidden focus:outline-none">
-    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
-         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
-
-  <!-- Logo centered -->
-  <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-    <img  src="assets/images/logo.png" class="h-16 max-h-full" alt="Logo">
-  </div>
-</header>
-
-
-  <!-- Drawer -->
-  <div id="drawer" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
-    <div class="p-4">
-      <button id="closeDrawer" class="mb-4 text-gray-700">
-        ✕
+    <!-- Header -->
+    <header
+      class="relative flex items-center justify-between px-4 bg-white shadow-md h-20"
+    >
+      <!-- Hamburger menu (hidden on large screens) -->
+      <button id="menuToggle" class="lg:hidden focus:outline-none">
+        <svg
+          class="w-6 h-6 text-gray-700"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
-      <ul class="space-y-4 text-gray-800">
-        <li><a href="#" class="block hover:text-blue-500">Home</a></li>
-        <li><a href="#" class="block hover:text-blue-500">About</a></li>
-        <li><a href="#" class="block hover:text-blue-500">Services</a></li>
-        <li><a href="#" class="block hover:text-blue-500">Contact</a></li>
-      </ul>
-    </div>
-  </div>
 
-  <!-- Overlay -->
-  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+      <!-- Logo centered -->
+      <div
+        class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <img src="assets/images/logo.png" class="h-16 max-h-full" alt="Logo" />
+      </div>
+    </header>
+
+    <!-- Drawer -->
+    <div
+      id="drawer"
+      class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50"
+    >
+      <div class="p-4">
+        <button id="closeDrawer" class="mb-4 text-gray-700">✕</button>
+        <ul class="space-y-4 text-gray-800">
+          <li><a href="#" class="block hover:text-blue-500">Home</a></li>
+          <li><a href="#" class="block hover:text-blue-500">About</a></li>
+          <li><a href="#" class="block hover:text-blue-500">Services</a></li>
+          <li><a href="#" class="block hover:text-blue-500">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"
+    ></div>
     <!-- Navbar -->
     <nav
       class="hidden lg:block bg-blue text-white px-4 sm:px-6 py-3 md:px-10 lg:px-12 xl:px-16"
@@ -64,7 +76,7 @@
         <!-- Dropdown Item -->
         <li class="relative dropdown">
           <button
-            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer"
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
           >
             ABOUT
             <svg
@@ -95,15 +107,15 @@
           </ul>
         </li>
 
-        <!-- Static Link -->
-        <li><a href="#">PROGRAM</a></li>
+       
 
-        <!-- Another Dropdown -->
-        <li class="relative dropdown">
+
+         <!-- Dropdown Item -->
+         <li class="relative dropdown">
           <button
-            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer"
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
           >
-            WORKSHOP
+          Conference
             <svg
               class="w-3 h-3 transition-transform duration-200"
               fill="currentColor"
@@ -117,17 +129,233 @@
             </svg>
           </button>
 
+          <!-- Dropdown Menu -->
           <ul
             class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
           >
             <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day 1</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
             </li>
             <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day 2</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Committee</a
+              >
             </li>
           </ul>
         </li>
+
+
+  <!-- Dropdown Item -->
+  <li class="relative dropdown">
+    <button
+      class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+    >
+    Program
+      <svg
+        class="w-3 h-3 transition-transform duration-200"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <!-- Dropdown Menu -->
+    <ul
+      class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+    >
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+          >Link 2</a
+        >
+      </li>
+    </ul>
+  </li>
+
+
+
+      <!-- Dropdown Item -->
+      <li class="relative dropdown">
+        <button
+          class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+        >
+        Conference
+          <svg
+            class="w-3 h-3 transition-transform duration-200"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+
+        <!-- Dropdown Menu -->
+        <ul
+          class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+        >
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+              >Link 2</a
+            >
+          </li>
+        </ul>
+      </li>
+
+        <!-- Dropdown Item -->
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+          >
+          Abstract
+            <svg
+              class="w-3 h-3 transition-transform duration-200"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <ul
+            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Link 2</a
+              >
+            </li>
+          </ul>
+        </li>
+
+          <!-- Dropdown Item -->
+          <li class="relative dropdown">
+            <button
+              class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+            >
+            Workshop
+              <svg
+                class="w-3 h-3 transition-transform duration-200"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+  
+            <!-- Dropdown Menu -->
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >Link 2</a
+                >
+              </li>
+            </ul>
+          </li>
+
+
+            <!-- Dropdown Item -->
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+          >
+          Accomodaion & Travel
+            <svg
+              class="w-3 h-3 transition-transform duration-200"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <ul
+            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Link 2</a
+              >
+            </li>
+          </ul>
+        </li>
+
+          <!-- Dropdown Item -->
+          <li class="relative dropdown">
+            <button
+              class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+            >
+            More
+              <svg
+                class="w-3 h-3 transition-transform duration-200"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+  
+            <!-- Dropdown Menu -->
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >Link 2</a
+                >
+              </li>
+            </ul>
+          </li>
+
+        <!-- Static Link -->
+        <!-- <li><a href="#">PROGRAM</a></li> -->
+
+
 
         <!-- Registration Button -->
         <li class="ml-auto">
@@ -185,7 +413,7 @@
       </div>
     </section>
 
-    <div
+    <section
       class="bg-blue text-white px-4 sm:px-6 py-8 md:p-10 lg:p-12 xl:p-16 flex flex-col text-center xl:text-left xl:flex-row items-center justify-between gap-6"
     >
       <!-- Left Content -->
@@ -205,7 +433,9 @@
         <!-- Box -->
         <div>
           <div class="bg-[#0074D9] rounded-md px-4 py-2">
-            <div id="days" class="text-xl sm:text-2xl md:text-4xl lg:text-5xl">0</div>
+            <div id="days" class="text-xl sm:text-2xl md:text-4xl lg:text-5xl">
+              0
+            </div>
           </div>
           <div class="text-sm md:text-base uppercase mt-1">Days</div>
         </div>
@@ -214,7 +444,9 @@
 
         <div>
           <div class="bg-[#0074D9] rounded-md px-4 py-2">
-            <div id="hours" class="text-xl sm:text-2xl md:text-4xl lg:text-5xl">0</div>
+            <div id="hours" class="text-xl sm:text-2xl md:text-4xl lg:text-5xl">
+              0
+            </div>
           </div>
           <div class="text-sm md:text-base uppercase mt-1">Hours</div>
         </div>
@@ -222,7 +454,12 @@
         <div class="text-xl sm:text-2xl md:text-4xl font-extrabold mt-2">:</div>
         <div>
           <div class="bg-[#0074D9] rounded-md px-4 py-2">
-            <div id="minutes" class="text-xl sm:text-2xl md:text-4xl lg:text-5xl">0</div>
+            <div
+              id="minutes"
+              class="text-xl sm:text-2xl md:text-4xl lg:text-5xl"
+            >
+              0
+            </div>
           </div>
           <div class="text-sm md:text-base uppercase mt-1">Minutes</div>
         </div>
@@ -231,12 +468,180 @@
 
         <div>
           <div class="bg-[#0074D9] rounded-md px-4 py-2">
-            <div id="seconds" class="text-xl sm:text-2xl md:text-4xl lg:text-5xl">0</div>
+            <div
+              id="seconds"
+              class="text-xl sm:text-2xl md:text-4xl lg:text-5xl"
+            >
+              0
+            </div>
           </div>
           <div class="text-sm md:text-base uppercase mt-1">Seconds</div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="bg-white py-12 px-4 md:px-8">
+      <div class="lg:grid lg:grid-cols-[160px_auto] lg:gap-10">
+        <div class="hidden lg:block">
+         <img src="assets/images/section3img.svg" alt="">
+        </div>
+        <div>
+          
+          <div class="text-center lg:text-left">
+            <!-- Heading -->
+          <div class="mb-10">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-[#0056A3] uppercase mb-2"
+            >
+              Welcome Message
+            </h2>
+            <h4 class="text-xl font-semibold mb-2">Dear Friends</h4>
+            <h3 class="text-2xl text-red-600 font-bold">
+              Welcome to KONGU PEDICON 2025!
+            </h3>
+          </div>
+  
+          <!-- Paragraph -->
+          <div
+            class=" text-gray-700 mb-8 text-base md:text-lg leading-relaxed"
+          >
+            <p>
+              On behalf of the organizing committee, it is with immense pleasure
+              that we extend a warm and hearty welcome to all of you to the 49th
+              Annual State Conference of IAP-TNSC (KONGU PEDICON 2025), hosted in
+              the Manchester of South India - Coimbatore city in CODISSA Trade
+              Fair Complex. Coimbatore is a city known for its industrial and
+              entrepreneurial spirit. It is vibrant in its own unique way,
+              offering a mix of tradition and modernity.
+            </p>
+          </div>
+  
+          <!-- Subheading -->
+          <div class="text-xl font-semibold mb-8">
+            <p>
+              At <span class="font-bold">KONGU PEDICON 2025</span>, you can look
+              forward to:
+            </p>
+          </div>
+          </div>
+  
+          <div class="overflow-x-auto scrollbar-hide">
+            <!-- Feature Cards -->
+            <div
+              class="grid grid-cols-[300px_300px_300px_300px] lg:grid-cols-4 gap-6 mb-8"
+            >
+              <!-- Item 1 -->
+              <div
+                class="border rounded-lg p-6 shadow-sm hover:shadow-md transition space-y-3"
+              >
+                <svg
+                  class="h-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="59"
+                  viewBox="0 0 55 59"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M49.9767 56.6467H53.7713C54.2934 56.6467 54.7174 57.0697 54.7174 57.5908C54.7174 58.1118 54.2934 58.5349 53.7713 58.5349H0.946066C0.423956 58.5349 0 58.1118 0 57.5908C0 57.0697 0.423956 56.6467 0.946066 56.6467H4.74074V35.4561H4.74393C4.7418 35.4179 4.74074 35.3795 4.74074 35.3412C4.74074 34.5507 5.18764 33.7752 6.06334 33.1827C7.04039 32.5216 8.61027 32.0647 10.3877 32.0647C12.1651 32.0647 13.735 32.5216 14.712 33.1827C15.5877 33.7752 16.0346 34.5507 16.0346 35.3412C16.0346 35.3795 16.0336 35.4179 16.0314 35.4561H16.0346V56.6467H21.7117V25.1639C21.7117 24.3735 22.1586 23.598 23.0343 23.0054C24.0114 22.3443 25.5813 21.8876 27.3587 21.8876C29.1361 21.8876 30.706 22.3443 31.683 23.0054C32.5587 23.598 33.0056 24.3735 33.0056 25.1639V56.6467H38.6828V13.0914C38.6828 12.3011 39.1297 11.5256 40.0054 10.9331C40.9824 10.272 42.5523 9.81513 44.3297 9.81513C46.1071 9.81513 47.677 10.272 48.6541 10.9331C49.5298 11.5256 49.9767 12.3011 49.9767 13.0914V56.6467ZM6.63287 56.6467H14.1425V37.8285C13.1754 38.3074 11.852 38.6175 10.3877 38.6175C8.92341 38.6175 7.59999 38.3074 6.63287 37.8285V56.6467ZM23.6039 56.6467H31.1135V27.6514C30.1464 28.1302 28.823 28.4402 27.3587 28.4402C25.8944 28.4402 24.571 28.1302 23.6039 27.6514V56.6467ZM40.5749 56.6467H48.0845V15.5789C47.1174 16.0578 45.794 16.3678 44.3297 16.3678C42.8654 16.3678 41.542 16.0578 40.5749 15.5789V56.6467ZM31.1135 25.1639C31.1135 24.9227 30.8885 24.7491 30.6212 24.5683C29.8867 24.0713 28.6948 23.7758 27.3587 23.7758C26.0226 23.7758 24.8307 24.0713 24.0962 24.5683C23.8289 24.7491 23.6039 24.9227 23.6039 25.1639C23.6039 25.4051 23.8289 25.5786 24.0962 25.7595C24.8307 26.2565 26.0226 26.552 27.3587 26.552C28.6948 26.552 29.8867 26.2565 30.6212 25.7595C30.8885 25.5786 31.1135 25.4051 31.1135 25.1639ZM48.0845 13.0914C48.0845 12.8503 47.8595 12.6767 47.5922 12.4959C46.8577 11.999 45.6658 11.7034 44.3297 11.7034C42.9936 11.7034 41.8017 11.999 41.0672 12.4959C40.8001 12.6767 40.5749 12.8503 40.5749 13.0914C40.5749 13.3327 40.8001 13.5062 41.0672 13.687C41.8017 14.184 42.9936 14.4796 44.3297 14.4796C45.6658 14.4796 46.8577 14.184 47.5922 13.687C47.8595 13.5062 48.0845 13.3327 48.0845 13.0914ZM10.3877 33.953C9.05161 33.953 7.85968 34.2486 7.12518 34.7455C6.85791 34.9263 6.63287 35.0999 6.63287 35.3412C6.63287 35.5824 6.85791 35.7559 7.12518 35.9367C7.85968 36.4336 9.05161 36.7292 10.3877 36.7292C11.7238 36.7292 12.9157 36.4336 13.6502 35.9367C13.9173 35.7559 14.1425 35.5824 14.1425 35.3412C14.1425 35.0999 13.9173 34.9263 13.6502 34.7455C12.9157 34.2486 11.7238 33.953 10.3877 33.953ZM45.0229 3.35529C33.4074 13.253 20.6969 19.5052 8.67685 23.5465C8.18205 23.7129 7.64492 23.447 7.47818 22.9533C7.31144 22.4595 7.57787 21.9235 8.07266 21.7572C19.8394 17.801 32.2823 11.6938 43.6614 2.03236L41.8433 2.12913C41.3219 2.15686 40.8761 1.75691 40.8483 1.23659C40.8204 0.716269 41.2212 0.271239 41.7426 0.243506L46.2922 0.00134176C46.5761 -0.013764 46.8518 0.0992932 47.0429 0.309358C47.234 0.519304 47.3205 0.803953 47.2782 1.08447L46.6219 5.44308C46.5443 5.95832 46.0622 6.31378 45.5458 6.23636C45.0294 6.15895 44.6732 5.6778 44.7508 5.16256L45.0229 3.35529Z"
+                    fill="#082233"
+                  />
+                </svg>
+                <p class="text-gray-700">
+                  A variety of sessions and workshops presented by leading
+                  paediatric experts from across India.
+                </p>
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="border rounded-lg p-6 shadow-sm hover:shadow-md transition space-y-3"
+              >
+                <svg
+                  class="h-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="59"
+                  viewBox="0 0 55 59"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M49.9767 56.6467H53.7713C54.2934 56.6467 54.7174 57.0697 54.7174 57.5908C54.7174 58.1118 54.2934 58.5349 53.7713 58.5349H0.946066C0.423956 58.5349 0 58.1118 0 57.5908C0 57.0697 0.423956 56.6467 0.946066 56.6467H4.74074V35.4561H4.74393C4.7418 35.4179 4.74074 35.3795 4.74074 35.3412C4.74074 34.5507 5.18764 33.7752 6.06334 33.1827C7.04039 32.5216 8.61027 32.0647 10.3877 32.0647C12.1651 32.0647 13.735 32.5216 14.712 33.1827C15.5877 33.7752 16.0346 34.5507 16.0346 35.3412C16.0346 35.3795 16.0336 35.4179 16.0314 35.4561H16.0346V56.6467H21.7117V25.1639C21.7117 24.3735 22.1586 23.598 23.0343 23.0054C24.0114 22.3443 25.5813 21.8876 27.3587 21.8876C29.1361 21.8876 30.706 22.3443 31.683 23.0054C32.5587 23.598 33.0056 24.3735 33.0056 25.1639V56.6467H38.6828V13.0914C38.6828 12.3011 39.1297 11.5256 40.0054 10.9331C40.9824 10.272 42.5523 9.81513 44.3297 9.81513C46.1071 9.81513 47.677 10.272 48.6541 10.9331C49.5298 11.5256 49.9767 12.3011 49.9767 13.0914V56.6467ZM6.63287 56.6467H14.1425V37.8285C13.1754 38.3074 11.852 38.6175 10.3877 38.6175C8.92341 38.6175 7.59999 38.3074 6.63287 37.8285V56.6467ZM23.6039 56.6467H31.1135V27.6514C30.1464 28.1302 28.823 28.4402 27.3587 28.4402C25.8944 28.4402 24.571 28.1302 23.6039 27.6514V56.6467ZM40.5749 56.6467H48.0845V15.5789C47.1174 16.0578 45.794 16.3678 44.3297 16.3678C42.8654 16.3678 41.542 16.0578 40.5749 15.5789V56.6467ZM31.1135 25.1639C31.1135 24.9227 30.8885 24.7491 30.6212 24.5683C29.8867 24.0713 28.6948 23.7758 27.3587 23.7758C26.0226 23.7758 24.8307 24.0713 24.0962 24.5683C23.8289 24.7491 23.6039 24.9227 23.6039 25.1639C23.6039 25.4051 23.8289 25.5786 24.0962 25.7595C24.8307 26.2565 26.0226 26.552 27.3587 26.552C28.6948 26.552 29.8867 26.2565 30.6212 25.7595C30.8885 25.5786 31.1135 25.4051 31.1135 25.1639ZM48.0845 13.0914C48.0845 12.8503 47.8595 12.6767 47.5922 12.4959C46.8577 11.999 45.6658 11.7034 44.3297 11.7034C42.9936 11.7034 41.8017 11.999 41.0672 12.4959C40.8001 12.6767 40.5749 12.8503 40.5749 13.0914C40.5749 13.3327 40.8001 13.5062 41.0672 13.687C41.8017 14.184 42.9936 14.4796 44.3297 14.4796C45.6658 14.4796 46.8577 14.184 47.5922 13.687C47.8595 13.5062 48.0845 13.3327 48.0845 13.0914ZM10.3877 33.953C9.05161 33.953 7.85968 34.2486 7.12518 34.7455C6.85791 34.9263 6.63287 35.0999 6.63287 35.3412C6.63287 35.5824 6.85791 35.7559 7.12518 35.9367C7.85968 36.4336 9.05161 36.7292 10.3877 36.7292C11.7238 36.7292 12.9157 36.4336 13.6502 35.9367C13.9173 35.7559 14.1425 35.5824 14.1425 35.3412C14.1425 35.0999 13.9173 34.9263 13.6502 34.7455C12.9157 34.2486 11.7238 33.953 10.3877 33.953ZM45.0229 3.35529C33.4074 13.253 20.6969 19.5052 8.67685 23.5465C8.18205 23.7129 7.64492 23.447 7.47818 22.9533C7.31144 22.4595 7.57787 21.9235 8.07266 21.7572C19.8394 17.801 32.2823 11.6938 43.6614 2.03236L41.8433 2.12913C41.3219 2.15686 40.8761 1.75691 40.8483 1.23659C40.8204 0.716269 41.2212 0.271239 41.7426 0.243506L46.2922 0.00134176C46.5761 -0.013764 46.8518 0.0992932 47.0429 0.309358C47.234 0.519304 47.3205 0.803953 47.2782 1.08447L46.6219 5.44308C46.5443 5.95832 46.0622 6.31378 45.5458 6.23636C45.0294 6.15895 44.6732 5.6778 44.7508 5.16256L45.0229 3.35529Z"
+                    fill="#082233"
+                  />
+                </svg>
+                <p class="text-gray-700">
+                  Networking opportunities with fellow professionals, fostering
+                  meaningful collaborations that will shape the future of
+                  paediatric healthcare.
+                </p>
+              </div>
+              <!-- Item 3 -->
+              <div
+                class="border rounded-lg p-6 shadow-sm hover:shadow-md transition space-y-3"
+              >
+                <svg
+                  class="h-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="59"
+                  viewBox="0 0 55 59"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M49.9767 56.6467H53.7713C54.2934 56.6467 54.7174 57.0697 54.7174 57.5908C54.7174 58.1118 54.2934 58.5349 53.7713 58.5349H0.946066C0.423956 58.5349 0 58.1118 0 57.5908C0 57.0697 0.423956 56.6467 0.946066 56.6467H4.74074V35.4561H4.74393C4.7418 35.4179 4.74074 35.3795 4.74074 35.3412C4.74074 34.5507 5.18764 33.7752 6.06334 33.1827C7.04039 32.5216 8.61027 32.0647 10.3877 32.0647C12.1651 32.0647 13.735 32.5216 14.712 33.1827C15.5877 33.7752 16.0346 34.5507 16.0346 35.3412C16.0346 35.3795 16.0336 35.4179 16.0314 35.4561H16.0346V56.6467H21.7117V25.1639C21.7117 24.3735 22.1586 23.598 23.0343 23.0054C24.0114 22.3443 25.5813 21.8876 27.3587 21.8876C29.1361 21.8876 30.706 22.3443 31.683 23.0054C32.5587 23.598 33.0056 24.3735 33.0056 25.1639V56.6467H38.6828V13.0914C38.6828 12.3011 39.1297 11.5256 40.0054 10.9331C40.9824 10.272 42.5523 9.81513 44.3297 9.81513C46.1071 9.81513 47.677 10.272 48.6541 10.9331C49.5298 11.5256 49.9767 12.3011 49.9767 13.0914V56.6467ZM6.63287 56.6467H14.1425V37.8285C13.1754 38.3074 11.852 38.6175 10.3877 38.6175C8.92341 38.6175 7.59999 38.3074 6.63287 37.8285V56.6467ZM23.6039 56.6467H31.1135V27.6514C30.1464 28.1302 28.823 28.4402 27.3587 28.4402C25.8944 28.4402 24.571 28.1302 23.6039 27.6514V56.6467ZM40.5749 56.6467H48.0845V15.5789C47.1174 16.0578 45.794 16.3678 44.3297 16.3678C42.8654 16.3678 41.542 16.0578 40.5749 15.5789V56.6467ZM31.1135 25.1639C31.1135 24.9227 30.8885 24.7491 30.6212 24.5683C29.8867 24.0713 28.6948 23.7758 27.3587 23.7758C26.0226 23.7758 24.8307 24.0713 24.0962 24.5683C23.8289 24.7491 23.6039 24.9227 23.6039 25.1639C23.6039 25.4051 23.8289 25.5786 24.0962 25.7595C24.8307 26.2565 26.0226 26.552 27.3587 26.552C28.6948 26.552 29.8867 26.2565 30.6212 25.7595C30.8885 25.5786 31.1135 25.4051 31.1135 25.1639ZM48.0845 13.0914C48.0845 12.8503 47.8595 12.6767 47.5922 12.4959C46.8577 11.999 45.6658 11.7034 44.3297 11.7034C42.9936 11.7034 41.8017 11.999 41.0672 12.4959C40.8001 12.6767 40.5749 12.8503 40.5749 13.0914C40.5749 13.3327 40.8001 13.5062 41.0672 13.687C41.8017 14.184 42.9936 14.4796 44.3297 14.4796C45.6658 14.4796 46.8577 14.184 47.5922 13.687C47.8595 13.5062 48.0845 13.3327 48.0845 13.0914ZM10.3877 33.953C9.05161 33.953 7.85968 34.2486 7.12518 34.7455C6.85791 34.9263 6.63287 35.0999 6.63287 35.3412C6.63287 35.5824 6.85791 35.7559 7.12518 35.9367C7.85968 36.4336 9.05161 36.7292 10.3877 36.7292C11.7238 36.7292 12.9157 36.4336 13.6502 35.9367C13.9173 35.7559 14.1425 35.5824 14.1425 35.3412C14.1425 35.0999 13.9173 34.9263 13.6502 34.7455C12.9157 34.2486 11.7238 33.953 10.3877 33.953ZM45.0229 3.35529C33.4074 13.253 20.6969 19.5052 8.67685 23.5465C8.18205 23.7129 7.64492 23.447 7.47818 22.9533C7.31144 22.4595 7.57787 21.9235 8.07266 21.7572C19.8394 17.801 32.2823 11.6938 43.6614 2.03236L41.8433 2.12913C41.3219 2.15686 40.8761 1.75691 40.8483 1.23659C40.8204 0.716269 41.2212 0.271239 41.7426 0.243506L46.2922 0.00134176C46.5761 -0.013764 46.8518 0.0992932 47.0429 0.309358C47.234 0.519304 47.3205 0.803953 47.2782 1.08447L46.6219 5.44308C46.5443 5.95832 46.0622 6.31378 45.5458 6.23636C45.0294 6.15895 44.6732 5.6778 44.7508 5.16256L45.0229 3.35529Z"
+                    fill="#082233"
+                  />
+                </svg>
+                <p class="text-gray-700">
+                  An exhibition highlighting cutting-edge innovations in
+                  paediatric medicine and technology.
+                </p>
+              </div>
+              <!-- Item 4 -->
+              <div
+                class="border rounded-lg p-6 shadow-sm hover:shadow-md transition space-y-3"
+              >
+                <svg
+                  class="h-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="59"
+                  viewBox="0 0 55 59"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M49.9767 56.6467H53.7713C54.2934 56.6467 54.7174 57.0697 54.7174 57.5908C54.7174 58.1118 54.2934 58.5349 53.7713 58.5349H0.946066C0.423956 58.5349 0 58.1118 0 57.5908C0 57.0697 0.423956 56.6467 0.946066 56.6467H4.74074V35.4561H4.74393C4.7418 35.4179 4.74074 35.3795 4.74074 35.3412C4.74074 34.5507 5.18764 33.7752 6.06334 33.1827C7.04039 32.5216 8.61027 32.0647 10.3877 32.0647C12.1651 32.0647 13.735 32.5216 14.712 33.1827C15.5877 33.7752 16.0346 34.5507 16.0346 35.3412C16.0346 35.3795 16.0336 35.4179 16.0314 35.4561H16.0346V56.6467H21.7117V25.1639C21.7117 24.3735 22.1586 23.598 23.0343 23.0054C24.0114 22.3443 25.5813 21.8876 27.3587 21.8876C29.1361 21.8876 30.706 22.3443 31.683 23.0054C32.5587 23.598 33.0056 24.3735 33.0056 25.1639V56.6467H38.6828V13.0914C38.6828 12.3011 39.1297 11.5256 40.0054 10.9331C40.9824 10.272 42.5523 9.81513 44.3297 9.81513C46.1071 9.81513 47.677 10.272 48.6541 10.9331C49.5298 11.5256 49.9767 12.3011 49.9767 13.0914V56.6467ZM6.63287 56.6467H14.1425V37.8285C13.1754 38.3074 11.852 38.6175 10.3877 38.6175C8.92341 38.6175 7.59999 38.3074 6.63287 37.8285V56.6467ZM23.6039 56.6467H31.1135V27.6514C30.1464 28.1302 28.823 28.4402 27.3587 28.4402C25.8944 28.4402 24.571 28.1302 23.6039 27.6514V56.6467ZM40.5749 56.6467H48.0845V15.5789C47.1174 16.0578 45.794 16.3678 44.3297 16.3678C42.8654 16.3678 41.542 16.0578 40.5749 15.5789V56.6467ZM31.1135 25.1639C31.1135 24.9227 30.8885 24.7491 30.6212 24.5683C29.8867 24.0713 28.6948 23.7758 27.3587 23.7758C26.0226 23.7758 24.8307 24.0713 24.0962 24.5683C23.8289 24.7491 23.6039 24.9227 23.6039 25.1639C23.6039 25.4051 23.8289 25.5786 24.0962 25.7595C24.8307 26.2565 26.0226 26.552 27.3587 26.552C28.6948 26.552 29.8867 26.2565 30.6212 25.7595C30.8885 25.5786 31.1135 25.4051 31.1135 25.1639ZM48.0845 13.0914C48.0845 12.8503 47.8595 12.6767 47.5922 12.4959C46.8577 11.999 45.6658 11.7034 44.3297 11.7034C42.9936 11.7034 41.8017 11.999 41.0672 12.4959C40.8001 12.6767 40.5749 12.8503 40.5749 13.0914C40.5749 13.3327 40.8001 13.5062 41.0672 13.687C41.8017 14.184 42.9936 14.4796 44.3297 14.4796C45.6658 14.4796 46.8577 14.184 47.5922 13.687C47.8595 13.5062 48.0845 13.3327 48.0845 13.0914ZM10.3877 33.953C9.05161 33.953 7.85968 34.2486 7.12518 34.7455C6.85791 34.9263 6.63287 35.0999 6.63287 35.3412C6.63287 35.5824 6.85791 35.7559 7.12518 35.9367C7.85968 36.4336 9.05161 36.7292 10.3877 36.7292C11.7238 36.7292 12.9157 36.4336 13.6502 35.9367C13.9173 35.7559 14.1425 35.5824 14.1425 35.3412C14.1425 35.0999 13.9173 34.9263 13.6502 34.7455C12.9157 34.2486 11.7238 33.953 10.3877 33.953ZM45.0229 3.35529C33.4074 13.253 20.6969 19.5052 8.67685 23.5465C8.18205 23.7129 7.64492 23.447 7.47818 22.9533C7.31144 22.4595 7.57787 21.9235 8.07266 21.7572C19.8394 17.801 32.2823 11.6938 43.6614 2.03236L41.8433 2.12913C41.3219 2.15686 40.8761 1.75691 40.8483 1.23659C40.8204 0.716269 41.2212 0.271239 41.7426 0.243506L46.2922 0.00134176C46.5761 -0.013764 46.8518 0.0992932 47.0429 0.309358C47.234 0.519304 47.3205 0.803953 47.2782 1.08447L46.6219 5.44308C46.5443 5.95832 46.0622 6.31378 45.5458 6.23636C45.0294 6.15895 44.6732 5.6778 44.7508 5.16256L45.0229 3.35529Z"
+                    fill="#082233"
+                  />
+                </svg>
+                <p class="text-gray-700">
+                  Social events and cultural experiences that offer a chance to
+                  relax and enjoy the renowned hospitality of Coimbatore.
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- CTA Button -->
+          <div class="text-center">
+            <a
+              href="#"
+              class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded shadow-md transition"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+      
+    </section>
 
     <section class="px-4 sm:px-6 py-8 md:p-10 lg:p-12 xl:p-16">
       <div
@@ -250,7 +655,8 @@
         class="flex flex-wrap gap-10 max-w-7xl mx-auto justify-center section3-grid-items"
       >
         <div class="text-center space-y-1">
-          <img loading="lazy" 
+          <img
+            loading="lazy"
             src="assets/images/user.png"
             alt="user"
             class="max-w-32 lg:max-h-48 mx-auto"
@@ -262,7 +668,8 @@
         </div>
 
         <div class="text-center space-y-1">
-          <img loading="lazy" 
+          <img
+            loading="lazy"
             src="assets/images/user.png"
             alt="user"
             class="max-w-32 lg:max-h-48 mx-auto"
@@ -274,7 +681,8 @@
         </div>
 
         <div class="text-center space-y-1">
-          <img loading="lazy" 
+          <img
+            loading="lazy"
             src="assets/images/user.png"
             alt="user"
             class="max-w-32 lg:max-h-48 mx-auto"
@@ -286,7 +694,8 @@
         </div>
 
         <div class="text-center space-y-1">
-          <img loading="lazy" 
+          <img
+            loading="lazy"
             src="assets/images/user.png"
             alt="user"
             class="max-w-32 lg:max-h-48 mx-auto"
@@ -298,7 +707,8 @@
         </div>
 
         <div class="text-center space-y-1">
-          <img loading="lazy" 
+          <img
+            loading="lazy"
             src="assets/images/user.png"
             alt="user"
             class="max-w-32 lg:max-h-48 mx-auto"
@@ -320,7 +730,7 @@
     </section>
 
     <section class="relative py-8 md:py-10 lg:py-12 xl:py-16">
-      <img loading="lazy"  src="/assets/images/bg.jpg" alt="" class="w-full" />
+      <img loading="lazy" src="/assets/images/bg.jpg" alt="" class="w-full" />
 
       <div
         class="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 -mt-10 lg:-mt-30"
@@ -863,7 +1273,8 @@
 
     <section class="px-4 sm:px-6 py-8 md:p-10 lg:p-12 xl:p-16">
       <div>
-        <img loading="lazy" 
+        <img
+          loading="lazy"
           src="assets/images/map.jpg"
           class="w-full h-auto min-h-[300px] object-center object-cover rounded-2xl"
           alt=""
@@ -876,7 +1287,12 @@
         <div class="flex flex-col md:flex-row justify-between gap-8">
           <div class="flex flex-col items-center md:items-start gap-4">
             <div>
-              <img loading="lazy"  src="assets/images/logo.png" alt="logo" class="h-16" />
+              <img
+                loading="lazy"
+                src="assets/images/logo.png"
+                alt="logo"
+                class="h-16"
+              />
             </div>
             <div class="flex gap-1 items-center">
               <a href="#">
@@ -1173,27 +1589,26 @@
       });
     </script>
 
+    <script>
+      const drawer = document.getElementById("drawer");
+      const overlay = document.getElementById("overlay");
+      const menuToggle = document.getElementById("menuToggle");
+      const closeDrawer = document.getElementById("closeDrawer");
 
-<script>
-  const drawer = document.getElementById('drawer');
-  const overlay = document.getElementById('overlay');
-  const menuToggle = document.getElementById('menuToggle');
-  const closeDrawer = document.getElementById('closeDrawer');
+      menuToggle.addEventListener("click", () => {
+        drawer.classList.remove("-translate-x-full");
+        overlay.classList.remove("hidden");
+      });
 
-  menuToggle.addEventListener('click', () => {
-    drawer.classList.remove('-translate-x-full');
-    overlay.classList.remove('hidden');
-  });
+      closeDrawer.addEventListener("click", () => {
+        drawer.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+      });
 
-  closeDrawer.addEventListener('click', () => {
-    drawer.classList.add('-translate-x-full');
-    overlay.classList.add('hidden');
-  });
-
-  overlay.addEventListener('click', () => {
-    drawer.classList.add('-translate-x-full');
-    overlay.classList.add('hidden');
-  });
-</script>
+      overlay.addEventListener("click", () => {
+        drawer.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
