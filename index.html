@@ -21,59 +21,55 @@
   </head>
   <body class="roboto antialiased text-dark">
     <!-- Header -->
-    <header
-      class="relative flex items-center justify-between px-4 bg-white shadow-md h-20"
-    >
-      <!-- Hamburger menu (hidden on large screens) -->
-      <button id="menuToggle" class="lg:hidden focus:outline-none">
-        <svg
-          class="w-6 h-6 text-gray-700"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+   
+    <header class="navbar bg-white shadow-sm p-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 relative">
+      <div class="absolute lg:hidden">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+            class="w-6 h-6 text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Homepage</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="w-full flex justify-center items-center">
+        <a href="/">
+          <img
+            src="assets/images/header-logo.png"
+            class="h-10 min-[360px]:h-12 sm:h-14 w-auto md:h-16 lg:h-18"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div  class="absolute hidden lg:block lg:pr-16 end-0">
+        <a
+          href="/register.html"
+          class="bg-red-600 px-6 py-3 rounded text-white hover:bg-red-700 transition"
+          >Registration</a
         >
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-
-      <!-- Logo centered -->
-      <div
-        class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-      >
-        <img src="assets/images/logo.png" class="h-16 max-h-full" alt="Logo" />
       </div>
     </header>
 
-    <!-- Drawer -->
-    <div
-      id="drawer"
-      class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50"
-    >
-      <div class="p-4">
-        <button id="closeDrawer" class="mb-4 text-gray-700">✕</button>
-        <ul class="space-y-4 text-gray-800">
-          <li><a href="#" class="block hover:text-blue-500">Home</a></li>
-          <li><a href="#" class="block hover:text-blue-500">About</a></li>
-          <li><a href="#" class="block hover:text-blue-500">Services</a></li>
-          <li><a href="#" class="block hover:text-blue-500">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Overlay -->
-    <div
-      id="overlay"
-      class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"
-    ></div>
-    <!-- Navbar -->
-    <nav
+    <!-- <nav
       class="hidden lg:block bg-blue text-white px-4 sm:px-6 py-3 md:px-10 lg:px-12 xl:px-16"
     >
-      <ul class="flex items-center gap-6 relative">
-        <!-- Dropdown Item -->
+      <ul class="flex items-center justify-center gap-6 relative">
+        
         <li class="relative dropdown">
           <button
             class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
@@ -92,7 +88,6 @@
             </svg>
           </button>
 
-          <!-- Dropdown Menu -->
           <ul
             class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
           >
@@ -107,120 +102,12 @@
           </ul>
         </li>
 
-       
-
-
-         <!-- Dropdown Item -->
-         <li class="relative dropdown">
-          <button
-            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
-          >
-          Conference
-            <svg
-              class="w-3 h-3 transition-transform duration-200"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-
-          <!-- Dropdown Menu -->
-          <ul
-            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
-          >
-            <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                >Committee</a
-              >
-            </li>
-          </ul>
-        </li>
-
-
-  <!-- Dropdown Item -->
-  <li class="relative dropdown">
-    <button
-      class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
-    >
-    Program
-      <svg
-        class="w-3 h-3 transition-transform duration-200"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </button>
-
-    <!-- Dropdown Menu -->
-    <ul
-      class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
-    >
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-          >Link 2</a
-        >
-      </li>
-    </ul>
-  </li>
-
-
-
-      <!-- Dropdown Item -->
-      <li class="relative dropdown">
-        <button
-          class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
-        >
-        Conference
-          <svg
-            class="w-3 h-3 transition-transform duration-200"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-
-        <!-- Dropdown Menu -->
-        <ul
-          class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
-        >
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-              >Link 2</a
-            >
-          </li>
-        </ul>
-      </li>
-
-        <!-- Dropdown Item -->
+        
         <li class="relative dropdown">
           <button
             class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
           >
-          Abstract
+            Conference
             <svg
               class="w-3 h-3 transition-transform duration-200"
               fill="currentColor"
@@ -234,7 +121,41 @@
             </svg>
           </button>
 
-          <!-- Dropdown Menu -->
+         
+          <ul
+            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Committee</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+          >
+            Program
+            <svg
+              class="w-3 h-3 transition-transform duration-200"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+         
           <ul
             class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
           >
@@ -242,54 +163,50 @@
               <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
             </li>
             <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                >Link 2</a
-              >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 2</a>
             </li>
           </ul>
         </li>
 
-          <!-- Dropdown Item -->
-          <li class="relative dropdown">
-            <button
-              class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+  
+        
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+          >
+            Abstract
+            <svg
+              class="w-3 h-3 transition-transform duration-200"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+         
+          <ul
+            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 2</a>
+            </li>
+          </ul>
+        </li>
+
+        
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+          >
             Workshop
-              <svg
-                class="w-3 h-3 transition-transform duration-200"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-  
-            <!-- Dropdown Menu -->
-            <ul
-              class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
-            >
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                  >Link 2</a
-                >
-              </li>
-            </ul>
-          </li>
-
-
-            <!-- Dropdown Item -->
-        <li class="relative dropdown">
-          <button
-            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
-          >
-          Accomodaion & Travel
             <svg
               class="w-3 h-3 transition-transform duration-200"
               fill="currentColor"
@@ -303,7 +220,7 @@
             </svg>
           </button>
 
-          <!-- Dropdown Menu -->
+         
           <ul
             class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
           >
@@ -311,62 +228,78 @@
               <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
             </li>
             <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                >Link 2</a
-              >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 2</a>
             </li>
           </ul>
         </li>
 
-          <!-- Dropdown Item -->
-          <li class="relative dropdown">
-            <button
-              class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
-            >
-            More
-              <svg
-                class="w-3 h-3 transition-transform duration-200"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-  
-            <!-- Dropdown Menu -->
-            <ul
-              class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
-            >
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                  >Link 2</a
-                >
-              </li>
-            </ul>
-          </li>
-
-        <!-- Static Link -->
-        <!-- <li><a href="#">PROGRAM</a></li> -->
-
-
-
-        <!-- Registration Button -->
-        <li class="ml-auto">
-          <a
-            href="#"
-            class="bg-red-600 px-4 py-2 rounded text-white hover:bg-red-700 transition"
-            >Registration</a
+        
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
           >
+            Accomodaion & Travel
+            <svg
+              class="w-3 h-3 transition-transform duration-200"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+         
+          <ul
+            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 2</a>
+            </li>
+          </ul>
         </li>
+
+        
+        <li class="relative dropdown">
+          <button
+            class="dropdown-toggle flex items-center gap-1 focus:outline-none cursor-pointer uppercase"
+          >
+            More
+            <svg
+              class="w-3 h-3 transition-transform duration-200"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+         
+          <ul
+            class="dropdown-menu hidden absolute left-0 mt-2 w-44 bg-white text-black rounded shadow-md z-50"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 1</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Link 2</a>
+            </li>
+          </ul>
+        </li>
+
+
       </ul>
-    </nav>
+    </nav> -->
 
     <section>
       <div class="swiper" id="main-slider">
@@ -483,48 +416,47 @@
     <section class="bg-white px-4 sm:px-6 py-8 md:p-10 lg:p-12 xl:p-16">
       <div class="lg:grid lg:grid-cols-[160px_auto] lg:gap-10">
         <div class="hidden lg:block">
-         <img src="assets/images/section3img.svg" alt="">
+          <img src="assets/images/section3img.svg" alt="" />
         </div>
         <div>
-          
           <div class="text-center lg:text-left">
             <!-- Heading -->
-          <div class="mb-10">
-            <h2
-              class="text-3xl md:text-4xl font-bold text-blue uppercase mb-2"
+            <div class="mb-10">
+              <h2
+                class="text-3xl md:text-4xl font-bold text-blue uppercase mb-2"
+              >
+                Welcome Message
+              </h2>
+              <h4 class="text-xl font-semibold mb-2 text-dark">Dear Friends</h4>
+              <h3 class="text-2xl text-red font-bold">
+                Welcome to KONGU PEDICON 2025!
+              </h3>
+            </div>
+
+            <!-- Paragraph -->
+            <div
+              class="text-gray-700 mb-8 text-base md:text-lg leading-relaxed"
             >
-              Welcome Message
-            </h2>
-            <h4 class="text-xl font-semibold mb-2 text-dark">Dear Friends</h4>
-            <h3 class="text-2xl text-red font-bold">
-              Welcome to KONGU PEDICON 2025!
-            </h3>
+              <p>
+                On behalf of the organizing committee, it is with immense
+                pleasure that we extend a warm and hearty welcome to all of you
+                to the 49th Annual State Conference of IAP-TNSC (KONGU PEDICON
+                2025), hosted in the Manchester of South India - Coimbatore city
+                in CODISSA Trade Fair Complex. Coimbatore is a city known for
+                its industrial and entrepreneurial spirit. It is vibrant in its
+                own unique way, offering a mix of tradition and modernity.
+              </p>
+            </div>
+
+            <!-- Subheading -->
+            <div class="text-xl font-semibold mb-8 text-dark">
+              <p>
+                At <span class="font-bold">KONGU PEDICON 2025</span>, you can
+                look forward to:
+              </p>
+            </div>
           </div>
-  
-          <!-- Paragraph -->
-          <div
-            class=" text-gray-700 mb-8 text-base md:text-lg leading-relaxed"
-          >
-            <p>
-              On behalf of the organizing committee, it is with immense pleasure
-              that we extend a warm and hearty welcome to all of you to the 49th
-              Annual State Conference of IAP-TNSC (KONGU PEDICON 2025), hosted in
-              the Manchester of South India - Coimbatore city in CODISSA Trade
-              Fair Complex. Coimbatore is a city known for its industrial and
-              entrepreneurial spirit. It is vibrant in its own unique way,
-              offering a mix of tradition and modernity.
-            </p>
-          </div>
-  
-          <!-- Subheading -->
-          <div class="text-xl font-semibold mb-8 text-dark">
-            <p>
-              At <span class="font-bold">KONGU PEDICON 2025</span>, you can look
-              forward to:
-            </p>
-          </div>
-          </div>
-  
+
           <div class="overflow-x-auto scrollbar-hide">
             <!-- Feature Cards -->
             <div
@@ -629,7 +561,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- CTA Button -->
           <div class="text-center">
             <a
@@ -640,7 +572,6 @@
           </div>
         </div>
       </div>
-      
     </section>
 
     <section class="px-4 sm:px-6 py-8 md:p-10 lg:p-12 xl:p-16">
